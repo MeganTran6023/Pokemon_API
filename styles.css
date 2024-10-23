@@ -1,34 +1,75 @@
-/* Universal */
-
-  
-  #content-box {
+/* General container styling */
+#content-box {
     width: 500px;
     height: 500px;
     border: 10px solid lightgray;
     border-radius: 10px;
-
-    /* background-color: green; */
-    display: flex;
     margin: 0 auto;
     margin-top: 60px;
-
     background-image: linear-gradient(rgb(107, 155, 163), rgb(24, 71, 90), rgb(11, 50, 72));
-    background-size: cover;
-  
+    display: flex;
+    position: relative; /* Important: Ensure child elements are positioned relative to this */
 }
 
-#pokemon-info {
-    width: 250px;
-    height: 500px;
-    /* background-color: cyan; */
-    text-align: center;
-}
 
+
+/*area pokemon sprite */
 #pokemon-info img {
     width: 160px;
     height: 160px;
+    transform: translate(30%,-270%);
+}
+
+/* Space for left half */
+#pokemon-info-box {
+    width: 250px;
+    height: 500px;
+    z-index: 1; /* Lower z-index to stay behind the image */
+}
+
+/* Animation applied to the Pokémon sprite */
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Initial hidden state for sprite */
+.pokemon-sprite {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* When the fade-in class is applied */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+    opacity: 1;
+}
+
+/* Character list scroll */
+#pokemon-list {
+    width: 250px;
+    height: 500px;
+    /* background-color: yellow; */
+    font-size: 18px;
+    font-family: 'Cascadia Mono', 'Courier New', Courier, monospace;
+    overflow-y: auto;
+  }
+  
+  .pokemon-name {
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 20px;
-    background-color: white;
-}
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transitions */
+  }
+  
+  .pokemon-name:hover {
+    background-color: lightgreen; /* Change background color on hover */
+    transform: translateX(-5px);
+  }

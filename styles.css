@@ -11,18 +11,23 @@
     position: relative; /* Important: Ensure child elements are positioned relative to this */
 }
 
-
-
-/*area pokemon sprite */
-#pokemon-info img {
+/* Define parent container for images (pokemon-info) */
+#pokemon-info {
+    position: relative; /* Establish relative positioning for child elements */
+    top: 0; /* Reset top position (optional) */
+    left: 0; /* Reset left position (optional) */
+  }
+  
+  /* Style for Pokemon sprite (image1) */
+  #pokemon-img {
     width: 160px;
     height: 160px;
-    transform: translate(30%,-270%);
-}
-
+    transform: translate(30%,-270%); /* Adjust positioning as needed */
+    border: none; /* Remove border if not desired */
+  }
 /* Space for left half */
 #pokemon-info-box {
-    width: 250px;
+    width: 280px;
     height: 500px;
     z-index: 1; /* Lower z-index to stay behind the image */
 }
@@ -72,4 +77,17 @@
   .pokemon-name:hover {
     background-color: lightgreen; /* Change background color on hover */
     transform: translateX(-5px);
+  }
+
+  
+/*area platform */
+
+#platform-img {
+    width: 300px; /* Adjust size as needed */
+    height: 370px; /* Adjust size as needed */
+    position: absolute; /* Make image absolutely positioned within #pokemon-info */
+    top: -530px; /* Move image down 30px from top */
+    left: -20px; /* Move image 30px from left */
+    border: none; /* Remove border if not desired */
+    z-index: 0; /* Ensure platform image stays behind Pokemon sprite */
   }

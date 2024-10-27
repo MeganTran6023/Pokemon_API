@@ -11,6 +11,15 @@
     position: relative; /* Important: Ensure child elements are positioned relative to this */
 }
 
+/*website background*/
+body {
+  background-image: url('poke_main_bg.avif');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+
 /* Define parent container for images (pokemon-info) */
 #pokemon-info {
     position: relative; /* Establish relative positioning for child elements */
@@ -90,4 +99,115 @@
     left: -20px; /* Move image 30px from left */
     border: none; /* Remove border if not desired */
     z-index: 0; /* Ensure platform image stays behind Pokemon sprite */
+    margin-bottom: 10px; /* Add spacing between the platform and types */
   }
+
+/* pokemon types */
+
+#pokemon-types {
+  display: flex;
+  gap: 10px; /* Add space between type boxes */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical alignment (optional if types are on one line) */
+  margin-top: -405px; /* Adjusts position slightly under the platform image */
+  
+}
+
+.type-box {
+  padding: 3px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-family: 'Cascadia Mono', 'Courier New', Courier, monospace;
+}
+
+
+.normal {
+  background-color: rgb(134, 134, 111);
+  color: white;
+}
+
+.fire {
+  background-color: rgb(223, 152, 20);
+  color: white;
+}
+
+.grass {
+  background-color: rgb(145, 200, 145);
+  color: white;
+}
+
+.water {
+  background-color: rgb(71, 138, 255);
+  color: white;
+}
+
+.ice {
+  background-color: lightblue;
+  color: white;
+}
+
+.electric {
+  background-color: rgb(214, 182, 0);
+  color: white;
+}
+
+.fighting {
+  background-color: darkred;
+  color: white;
+}
+
+.flying {
+  background-color: rgb(106, 163, 186);
+  color: white;
+}
+
+.bug {
+  background-color: rgb(117, 157, 36);
+  color: white;
+}
+
+.ghost {
+  background-color: purple;
+  color: white;
+}
+
+.rock {
+  background-color: sienna;
+  color: white;
+}
+
+.ground {
+  background-color: rgb(168, 138, 101);
+  color: white;
+}
+
+.steel {
+  background-color: rgb(76, 76, 76);
+  color: white;
+}
+
+.dark {
+  background-color: rgb(99, 99, 99);
+  color: white;
+}
+
+.psychic {
+  background-color: palevioletred;
+  color: white;
+}
+
+.fairy {
+  background-color: rgb(151, 116, 121);
+  color: white;
+}
+
+.dragon {
+  background-color: teal;
+  color: white;
+}
+
+.poison {
+  background-color: darkviolet;
+  color: white;
+}

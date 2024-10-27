@@ -63,4 +63,31 @@ function updatePokemon() {
     // Update the image source
     pokemonImg.src = pokemonData.img;
 
+    //POKEMON TYPES
+    //clear type of prev pokemon
+    // let typesDiv = document.getElementById("pokemon-types");
+    // while (typesDiv.firstChild) {
+    //     typesDiv.firstChild.remove();
+
+    // //update type of pokemon
+// Get the container where the types are displayed
+let typesDiv = document.getElementById("pokemon-types");
+
+// Clear the previous types to avoid duplicates
+typesDiv.innerHTML = "";
+
+// Get the types for the current Pokémon
+let types = pokedex[this.id]["types"];
+
+// Loop through the types and create elements for each
+for (let i = 0; i < types.length; i++) {
+    let type = document.createElement("span");
+    type.innerText = types[i]["type"]["name"].toUpperCase();
+    type.classList.add("type-box", types[i]["type"]["name"]); // Adds background and font color if match with css class
+
+    // Append the new type to the container
+    typesDiv.appendChild(type);
+}
+
+
 }

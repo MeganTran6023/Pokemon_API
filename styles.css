@@ -211,3 +211,14 @@ body {
   background-color: darkviolet;
   color: white;
 }
+
+/* pokemon description platform */
+.pokemon-desc {
+  border-radius: 10px;
+  background-color: rgb(219, 246, 255);
+  margin: 5px;
+  padding: 5px;
+  height: 140px;
+  width: 240px;
+  transform: translate(5%,5%); /* Adjust positioning as needed */
+}

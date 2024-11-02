@@ -1,5 +1,5 @@
 //practice with first pokemon by id
-const pokemonCount = 151;
+const pokemonCount = 300;
 var pokedex = {};
 
 
@@ -89,5 +89,12 @@ for (let i = 0; i < types.length; i++) {
     typesDiv.appendChild(type);
 }
 
-
+//update pokemon description
+let pokemonData2 = pokedex[this.id];
+if (pokemonData2.desc) {
+  document.getElementById("pokemon-description").innerText = pokemonData2.desc;
+} else {
+  // Display a message if description is not available
+  document.getElementById("pokemon-description").innerText = "Description not available yet.";
+}
 }

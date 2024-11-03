@@ -10,6 +10,7 @@ https://github.com/user-attachments/assets/e32d51f9-c385-43e5-8c79-86977b8691b8
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
 
 ## About 📑
@@ -26,6 +27,8 @@ The purpose of this program is to allow users to view the Pokemon's type and des
 ### Prerequisites
 1. **Visual Studio Code**: A lightweight, popular code editor. You can download it from [Visual Studio Code's website](https://code.visualstudio.com/).
 2. **Python (latest version)**: Download the latest version of Python from [python.org](https://www.python.org/downloads/). Make sure to add Python to your system PATH during installation.
+
+### Installation
 
 #### Step 1: Install Visual Studio Code
 1. Download the installer for your operating system from [Visual Studio Code's download page](https://code.visualstudio.com/Download).
@@ -48,3 +51,17 @@ The purpose of this program is to allow users to view the Pokemon's type and des
 3. Configure VS Code to use the correct Python interpreter:
    - Press `Ctrl+Shift+P` to open the Command Palette.
    - Type "Python: Select Interpreter" and choose the Python version you just installed.
+
+## Usage 👨‍💻
+
+1) Clone the repository
+git clone https://github.com/yourusername/yourproject.git
+
+2) Navigate to the project directory
+cd yourproject
+
+3) Double click on index.html to run application
+
+## Acknowledgments
+
+Pokemon API Tutorial Refered to: [Kenny Yip](https://youtu.be/dVtnFH4m_fE)

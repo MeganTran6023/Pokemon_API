@@ -4,14 +4,6 @@
 
 https://github.com/user-attachments/assets/e32d51f9-c385-43e5-8c79-86977b8691b8
 
-## Table of Contents 📘
-- [About](#about)
-- [Features](#aeatures)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Acknowledgments](#acknowledgments)
 
 ## About 📑
 The purpose of this program is to allow users to view the Pokemon's type and description with a visually appealing platform.
